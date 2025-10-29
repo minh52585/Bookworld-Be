@@ -1,1 +1,5 @@
-// Nhóm bạn sẽ thêm các route sau này ở đây
+import { Router } from "express";
+const router = Router();
+
+
+export default router;
