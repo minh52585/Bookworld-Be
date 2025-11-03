@@ -10,6 +10,7 @@ const categorySchema = new mongoose.Schema(
         slug: {
             type: String,
             required: true,
+            unique: true,
         },
         description: {
             type: String,
@@ -26,5 +27,5 @@ const categorySchema = new mongoose.Schema(
         versionKey: false,
     }
 );
-export const Category = mongoose.model("categories",categorySchema);
+
 export default mongoose.model("Category", categorySchema);
